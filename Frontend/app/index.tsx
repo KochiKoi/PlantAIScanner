@@ -1,18 +1,15 @@
-import { useEffect } from "react";
-import { View,Text,Image, StyleSheet } from "react-native";
-import { useRouter } from "expo-router";
-import { Animated } from "react-native";
-export default function SplashScreen() {
-    const router = useRouter();
-    useEffect(()=>{
-        const timer=setTimeout(()=>{
-            
-        })
-    })
+import { Text, View } from "react-native";
+
+export default function Index() {
+  return (
+    <View
+      style={{
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <Text>Edit app/index.tsx to edit this screen.</Text>
+    </View>
+  );
 }
-const styles = StyleSheet.create({
-    text:{
-        fontSize:60,
-        color:"red"
-    },
-})
