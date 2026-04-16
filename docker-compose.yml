@@ -11,10 +11,3 @@ services:
     environment:
       - NODE_ENV=development
 
-  frontend:
-    build: ./Frontend
-    ports:
-      - "8081:8081"
-    volumes:
-      - ./Frontend:/app
-      - /app/node_modules
