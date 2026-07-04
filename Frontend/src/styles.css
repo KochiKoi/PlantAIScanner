@@ -1,3 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import 'tailwindcss';
+@import './components/features/header.component/header.component.css';
+@import './components/features/main.component/main.component.css';
+@import './components/features/footer.component/footer.component.css';
