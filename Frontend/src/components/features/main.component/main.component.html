@@ -1,1 +1,67 @@
-<p>main.component works!</p>
+<main class="flex-grow container mx-auto px-4 py-8 max-w-5xl flex flex-col md:flex-row gap-8">
+
+    <section class="w-full md:w-1/2 flex flex-col gap-4">
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 h-full flex flex-col">
+            <h2 class="text-lg font-bold text-gray-800 mb-2">Tải ảnh lá cây cần kiểm tra</h2>
+            <p class="text-sm text-gray-500 mb-6">Đảm bảo hình ảnh rõ nét, đủ sáng và tập trung vào vùng bị bệnh.</p>
+
+            <div
+                class="flex-grow border-2 border-dashed border-green-300 rounded-xl bg-green-50 flex flex-col items-center justify-center p-8 hover:bg-green-100 transition cursor-pointer group">
+                <svg class="w-16 h-16 text-green-500 group-hover:scale-110 transition duration-300" fill="none"
+                    stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                        d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z">
+                    </path>
+                </svg>
+                <p class="mt-4 text-gray-700 font-medium text-center">Nhấp hoặc kéo thả ảnh vào đây</p>
+                <p class="text-xs text-gray-400 mt-2">Hỗ trợ: JPG, PNG, WEBP (Tối đa 5MB)</p>
+                <button
+                    class="mt-6 bg-brand text-white px-6 py-2 rounded-lg font-medium hover:bg-green-700 transition shadow-md">
+                    Chọn tệp
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full md:w-1/2">
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 h-full">
+            <h2 class="text-lg font-bold text-gray-800 mb-6 flex items-center gap-2">
+                <svg class="w-5 h-5 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                Kết quả chẩn đoán
+            </h2>
+
+            <div class="space-y-4">
+                <div class="flex justify-between items-center bg-gray-50 p-4 rounded-lg border border-gray-100">
+                    <span class="text-gray-500 text-sm font-medium">Cây trồng:</span>
+                    <span class="font-bold text-gray-800">Cà phê (Robusta)</span>
+                </div>
+
+                <div class="flex justify-between items-center bg-red-50 p-4 rounded-lg border border-red-100">
+                    <span class="text-gray-500 text-sm font-medium">Tình trạng:</span>
+                    <span class="font-bold text-red-600 flex items-center gap-1">
+                        <span class="w-2 h-2 rounded-full bg-red-600"></span> Bị nhiễm bệnh (85%)
+                    </span>
+                </div>
+
+                <div class="bg-gray-50 p-4 rounded-lg border border-gray-100">
+                    <span class="block text-gray-500 text-sm font-medium mb-1">Tên bệnh:</span>
+                    <span class="font-bold text-gray-800">Bệnh Rỉ sắt (Hemileia vastatrix)</span>
+                </div>
+
+                <div class="bg-brand/10 p-4 rounded-lg border border-brand/20 mt-4">
+                    <span class="block text-brand font-bold text-sm mb-2">Phác đồ điều trị đề xuất:</span>
+                    <ul class="text-sm text-gray-700 space-y-2 list-disc pl-4 marker:text-brand">
+                        <li>Cắt bỏ và tiêu hủy các cành, lá bị bệnh nặng để tránh lây lan.</li>
+                        <li>Sử dụng thuốc gốc Đồng (Copper) hoặc các loại thuốc có hoạt chất Hexaconazole.</li>
+                        <li>Tỉa cành tạo tán giúp vườn cây thông thoáng, giảm độ ẩm.</li>
+                        <li>Bón phân cân đối, tăng cường Kali giúp cây tăng sức đề kháng.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
