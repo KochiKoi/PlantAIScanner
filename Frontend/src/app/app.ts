@@ -1,9 +1,10 @@
 import { Component, signal } from '@angular/core';
+import { HeaderComponent } from '../components/features/header.component/header.component';
 
 
 @Component({
   selector: 'app-root',
-  imports: [],
+  imports: [HeaderComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
